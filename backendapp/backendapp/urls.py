@@ -24,7 +24,8 @@ urlpatterns = [
     path('' , include('backend.urls')),
     path('Data_set.csv', views.serve_csv, name='serve_csv'),
     path('images/<str:image_name>', views.serve_image, name='serve_image'),
-
+    path('users.csv', views.serve_users, name='serve_users'),
+    path('favicon.ico', views.serve_favicon, name='serve_favicon'),
 ]
 
 if settings.DEBUG:
